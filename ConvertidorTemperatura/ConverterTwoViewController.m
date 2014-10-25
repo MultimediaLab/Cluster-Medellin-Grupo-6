@@ -22,7 +22,6 @@
     _resultTxt.text = [converterTwo convertCtoK:[_valueTxt.text floatValue]];
     [self.view endEditing:YES];
 }
-
 - (IBAction)convertKtoCButton:(id)sender {
     _resultTxt.text = [converterTwo convertKtoC:[_valueTxt.text floatValue]];
     [self.view endEditing:YES];
