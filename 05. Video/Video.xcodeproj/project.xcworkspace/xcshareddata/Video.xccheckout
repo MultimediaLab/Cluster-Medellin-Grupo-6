@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B090BFC0-4A13-4179-AB5A-CEBB5C9A837A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Video</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3ED52BD9018A137EF9EEF7BEAC24058354B618F7</key>
+		<string>https://github.com/MultimediaLab/Cluster-Medellin.git</string>
+		<key>5BC1C81875B742AA2FDB4D54D81EE109BFA63D04</key>
+		<string>https://github.com/MultimediaLab/Cluster-Medellin-Grupo-6.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Video/Video.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3ED52BD9018A137EF9EEF7BEAC24058354B618F7</key>
+		<string>../../../..</string>
+		<key>5BC1C81875B742AA2FDB4D54D81EE109BFA63D04</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MultimediaLab/Cluster-Medellin-Grupo-6.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5BC1C81875B742AA2FDB4D54D81EE109BFA63D04</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3ED52BD9018A137EF9EEF7BEAC24058354B618F7</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5BC1C81875B742AA2FDB4D54D81EE109BFA63D04</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cluster-Medellin-Grupo-6</string>
+		</dict>
+	</array>
+</dict>
+</plist>
