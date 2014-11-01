@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
@@ -27,26 +27,33 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2tK-dL-eT6">
                                 <rect key="frame" x="20" y="348" width="281" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57B-jK-vw0">
                                 <rect key="frame" x="132" y="406" width="56" height="30"/>
                                 <state key="normal" title="Ingresar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iaU-NK-8m0" kind="modal" id="ZBz-5A-Mf7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="userName" destination="BIc-b1-x1r" id="fnc-fv-yID"/>
+                        <outlet property="userPass" destination="2tK-dL-eT6" id="M4r-K7-CtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202" y="280"/>
         </scene>
-        <!--View Controller-->
+        <!--Converter View Controller-->
         <scene sceneID="1cj-el-bkO">
             <objects>
-                <viewController id="iaU-NK-8m0" sceneMemberID="viewController">
+                <viewController id="iaU-NK-8m0" customClass="ConverterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="klb-Ep-05X"/>
                         <viewControllerLayoutGuide type="bottom" id="Cet-gF-cz8"/>
@@ -66,6 +73,9 @@
                                 <state key="normal" title="Config">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="piY-29-1Hn" kind="modal" id="Faw-Wy-9ju"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convertidor Dolares a Pesos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-gt-aRz">
                                 <rect key="frame" x="50" y="66" width="220" height="21"/>
@@ -80,6 +90,9 @@
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ja5-Rt-MTX">
                                 <rect key="frame" x="14" y="173" width="291" height="31"/>
+                                <connections>
+                                    <action selector="coverDolar:" destination="iaU-NK-8m0" eventType="valueChanged" id="L5j-Wr-e1c"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1900" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-81-s4I">
                                 <rect key="frame" x="11" y="205" width="39" height="21"/>
@@ -110,19 +123,31 @@
                                 <state key="normal" title="Salir">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="exit:" destination="iaU-NK-8m0" eventType="touchUpInside" id="cmR-YA-Px2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="currentTxt" destination="di6-tv-heL" id="mfP-22-fXj"/>
+                        <outlet property="dolars" destination="JsW-UL-Z3Z" id="vK7-9N-sJO"/>
+                        <outlet property="hello" destination="VPl-qO-9Nm" id="bBY-Wc-Gna"/>
+                        <outlet property="maxTxt" destination="5Z8-fe-UFv" id="0lO-9D-TiQ"/>
+                        <outlet property="minTxt" destination="jjy-81-s4I" id="fKN-X9-H1S"/>
+                        <outlet property="result" destination="aHA-8d-N1q" id="Wah-md-6RN"/>
+                        <outlet property="slider" destination="Ja5-Rt-MTX" id="sup-70-lTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8E-Qh-gEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="553" y="273"/>
         </scene>
-        <!--View Controller-->
+        <!--Config View Controller-->
         <scene sceneID="SOY-mk-TpH">
             <objects>
-                <viewController id="piY-29-1Hn" sceneMemberID="viewController">
+                <viewController id="piY-29-1Hn" customClass="ConfigViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I50-ke-bxl"/>
                         <viewControllerLayoutGuide type="bottom" id="GSC-9A-nsj"/>
@@ -139,11 +164,6 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esV-vG-Cmj">
                                 <rect key="frame" x="112" y="102" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRf-nc-ygH">
-                                <rect key="frame" x="112" y="180" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -164,14 +184,26 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="piY-29-1Hn" eventType="touchUpInside" id="5cw-8j-ioW"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRf-nc-ygH">
+                                <rect key="frame" x="112" y="180" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="maxTxt" destination="rRf-nc-ygH" id="7OH-Ot-u29"/>
+                        <outlet property="minTxt" destination="esV-vG-Cmj" id="tR9-AI-edO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tf0-tm-cdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="280"/>
+            <point key="canvasLocation" x="966" y="267"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

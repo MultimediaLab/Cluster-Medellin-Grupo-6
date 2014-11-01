@@ -10,4 +10,13 @@
 
 @implementation User
 
+-(BOOL)isUserAutorizate{
+
+    if ([_name isEqualToString:@"admin"] && [_pass isEqualToString:@"123"]) {
+        return YES;
+        
+    }
+    return NO;
+}
+
 @end

@@ -9,5 +9,9 @@
 #import "Converter.h"
 
 @implementation Converter
+-(NSString *)convertDolar:(NSString *)dolar inpesos:(float)tasaPesos{
+    
+    return [NSString stringWithFormat:@"$ %.02f", [dolar floatValue] * tasaPesos ];
+}
 
 @end

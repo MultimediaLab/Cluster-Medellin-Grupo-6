@@ -1,5 +1,5 @@
 //
-//  ConfigDelegate.h
+//  Converter.h
 //  Convertidor
 //
 //  Created by Profesor on 1/11/14.
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ConfigDelegate <NSObject>
+@interface Converter : NSObject
+-(NSString *)convertDolar:(NSString*) dolar inpesos:(float)tasaPesos;
 
 @end

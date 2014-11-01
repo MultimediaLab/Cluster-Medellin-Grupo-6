@@ -1,5 +1,5 @@
 //
-//  Converter.h
+//  User.h
 //  Convertidor
 //
 //  Created by Profesor on 1/11/14.
@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Converter : NSObject
+@interface User : NSObject
 
-@end
+@property NSString * name;
+@property NSString * pass;
+
+-(BOOL)isUserAutorizate;
+
+  @end

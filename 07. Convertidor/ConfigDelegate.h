@@ -1,5 +1,5 @@
 //
-//  User.h
+//  ConfigDelegate.h
 //  Convertidor
 //
 //  Created by Profesor on 1/11/14.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+@protocol ConfigDelegate <NSObject>
+
+-(void)configDataSlider : (float) minValue and: (float) maxValue;
 
 @end
