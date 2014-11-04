@@ -32,11 +32,23 @@
 - (IBAction)urlButton:(id)sender {
     NSURL * url = [NSURL URLWithString:@"http://apple.com" ];
     NSURLRequest * request = [[NSURLRequest alloc] initWithURL:url];
+    
+    [_web setScalesPageToFit:NO];
+
     [_web loadRequest:request];
     
 }
 
 - (IBAction)pdfButton:(id)sender {
+    
+    NSString * ruta = [[NSBundle mainBundle] pathForResource:@"documento" ofType:@"pdf"];
+    NSData * datos = [[NSData alloc] initWithContentsOfFile:ruta];
+    
+    [_web setScalesPageToFit:YES];
+    
+    [_web loadData:datos MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+    
+    
 }
 -(void)webViewDidStartLoad:(UIWebView *)webView{
     [_animacion startAnimating];

@@ -14,6 +14,7 @@
 		F81F88451A054BCC00889FF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81F88441A054BCC00889FF2 /* Images.xcassets */; };
 		F81F88481A054BCC00889FF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81F88461A054BCC00889FF2 /* LaunchScreen.xib */; };
 		F81F88541A054BCC00889FF2 /* Navegador_WebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F88531A054BCC00889FF2 /* Navegador_WebTests.m */; };
+		F868C2DA1A09852400C63799 /* documento.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F868C2D91A09852400C63799 /* documento.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F81F884D1A054BCC00889FF2 /* Navegador WebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navegador WebTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81F88521A054BCC00889FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F81F88531A054BCC00889FF2 /* Navegador_WebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Navegador_WebTests.m; sourceTree = "<group>"; };
+		F868C2D91A09852400C63799 /* documento.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = documento.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		F81F882B1A054BCC00889FF2 = {
 			isa = PBXGroup;
 			children = (
+				F868C2D91A09852400C63799 /* documento.pdf */,
 				F81F88361A054BCC00889FF2 /* Navegador Web */,
 				F81F88501A054BCC00889FF2 /* Navegador WebTests */,
 				F81F88351A054BCC00889FF2 /* Products */,
@@ -202,6 +205,7 @@
 				F81F88431A054BCC00889FF2 /* Main.storyboard in Resources */,
 				F81F88481A054BCC00889FF2 /* LaunchScreen.xib in Resources */,
 				F81F88451A054BCC00889FF2 /* Images.xcassets in Resources */,
+				F868C2DA1A09852400C63799 /* documento.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +418,7 @@
 				F81F88591A054BCC00889FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F81F885A1A054BCC00889FF2 /* Build configuration list for PBXNativeTarget "Navegador WebTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				F81F885C1A054BCC00889FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
