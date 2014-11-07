@@ -16,6 +16,7 @@
 		F868C3381A09A62B00C63799 /* Pintor__Categorias_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F868C3371A09A62B00C63799 /* Pintor__Categorias_Tests.m */; };
 		F868C3441A09A8AD00C63799 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = F868C3431A09A8AD00C63799 /* UIColor+Random.m */; };
 		F868C3471A09AA9400C63799 /* PintorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F868C3461A09AA9400C63799 /* PintorView.m */; };
+		F89EEB6A1A0C2C6500266581 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F89EEB691A0C2C6500266581 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F868C3431A09A8AD00C63799 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 		F868C3451A09AA9400C63799 /* PintorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PintorView.h; sourceTree = "<group>"; };
 		F868C3461A09AA9400C63799 /* PintorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PintorView.m; sourceTree = "<group>"; };
+		F89EEB691A0C2C6500266581 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		F868C30F1A09A62A00C63799 = {
 			isa = PBXGroup;
 			children = (
+				F89EEB691A0C2C6500266581 /* icon.png */,
 				F868C3451A09AA9400C63799 /* PintorView.h */,
 				F868C3461A09AA9400C63799 /* PintorView.m */,
 				F868C3421A09A8AD00C63799 /* UIColor+Random.h */,
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89EEB6A1A0C2C6500266581 /* icon.png in Resources */,
 				F868C3271A09A62B00C63799 /* Main.storyboard in Resources */,
 				F868C32C1A09A62B00C63799 /* LaunchScreen.xib in Resources */,
 				F868C3291A09A62B00C63799 /* Images.xcassets in Resources */,
@@ -430,6 +434,7 @@
 				F868C33D1A09A62B00C63799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F868C33E1A09A62B00C63799 /* Build configuration list for PBXNativeTarget "Pintor (Categorias)Tests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +443,7 @@
 				F868C3401A09A62B00C63799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

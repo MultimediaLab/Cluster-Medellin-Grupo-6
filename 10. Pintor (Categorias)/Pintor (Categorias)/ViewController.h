@@ -4,6 +4,7 @@
 
 @interface ViewController : UIViewController
 - (IBAction)changeShape:(id)sender;
+- (IBAction)changeColor:(id)sender;
 
 
 @end

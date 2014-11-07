@@ -28,4 +28,8 @@
     UISegmentedControl * control = sender;
     [(PintorView*)self.view setShapeType:(int)[control selectedSegmentIndex]];
 }
+- (IBAction)changeColor:(id)sender {
+    UISegmentedControl * control = sender;
+    [(PintorView*)self.view setColorType:(int)[control selectedSegmentIndex]];
+}
 @end

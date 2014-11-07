@@ -37,6 +37,9 @@
                                     <segment title="Verde"/>
                                     <segment title="Random"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="vHw-lW-W0m"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

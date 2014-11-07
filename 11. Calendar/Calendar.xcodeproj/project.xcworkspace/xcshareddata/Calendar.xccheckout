@@ -5,9 +5,9 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>318DFDED-9CF3-4220-99DE-448CB9D716C4</string>
+	<string>76886458-E577-44C2-A7C7-1273CE21EF00</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Pintor (Categorias)</string>
+	<string>Calendar</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3ED52BD9018A137EF9EEF7BEAC24058354B618F7</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/MultimediaLab/Cluster-Medellin-Grupo-6.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>10. Pintor (Categorias)/Pintor (Categorias).xcodeproj</string>
+	<string>Calendar/Calendar.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3ED52BD9018A137EF9EEF7BEAC24058354B618F7</key>
