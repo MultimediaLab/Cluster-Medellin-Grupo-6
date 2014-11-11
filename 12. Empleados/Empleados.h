@@ -26,4 +26,7 @@
 //Eliminar
 -(void)deleteEmployedInDatabase;
 
+//Actualizar
+-(void)updateEmployedInDatabase;
+
 @end

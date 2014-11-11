@@ -93,9 +93,31 @@
         }else{
             NSLog(@"Error en SQL");
         }
+        sqlite3_finalize(query);
         sqlite3_close(employed);
     }
 
+}
+-(void)updateEmployedInDatabase{
+    [self searchPathOfDatabase];
+    sqlite3_stmt * query;
+    const char * db = [_databasePath UTF8String];
+    if (sqlite3_open(db,&employed)==SQLITE_OK){
+        
+        const char * update_sql = [[[NSString alloc] initWithFormat:@"UPDATE Employed SET EMP_NAME = \"%@\", EMP_CEDULA = \"%@\", EMP_JOB = \"%@\", EMP_PHONE = \"%@\", EMP_ADRESS = \"%@\" WHERE ID = %@ ", _empName, _empCedula, _empJob, _empPhone, _empAdress, _empId] UTF8String];
+        if(sqlite3_prepare_v2(employed,update_sql,-1,&query,NULL)==SQLITE_OK){
+            if (sqlite3_step(query)==SQLITE_DONE) {
+                _status = @"Registro Actualizado con Exito!!";
+            } else {
+                _status = @"Error al actualizar registro";
+            }
+        }
+        else{
+            NSLog(@"Error en SQL");
+        }
+        sqlite3_finalize(query);
+        sqlite3_close(employed);
+    }
 }
 
 @end

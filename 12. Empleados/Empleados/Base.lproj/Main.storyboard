@@ -165,7 +165,7 @@
         <!--Actualizar Empleado-->
         <scene sceneID="9YT-8h-p6b">
             <objects>
-                <viewController id="7Jn-T1-7gv" sceneMemberID="viewController">
+                <viewController id="7Jn-T1-7gv" customClass="ActualizarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NeF-Va-Ep0"/>
                         <viewControllerLayoutGuide type="bottom" id="Z9d-CW-RJR"/>
@@ -231,13 +231,28 @@
                                 <state key="normal" title="Buscar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchEmployed:" destination="7Jn-T1-7gv" eventType="touchUpInside" id="vS7-xZ-Q3Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Actualizar Empleado" id="3lD-NB-BAF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="XnG-Hf-ovG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="XnG-Hf-ovG">
+                            <connections>
+                                <action selector="updateEmployed:" destination="7Jn-T1-7gv" id="pou-gi-bWR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="adressText" destination="RHK-cx-nkf" id="gtY-jc-DEO"/>
+                        <outlet property="jobText" destination="fcx-I5-hgX" id="5Sb-mu-8F6"/>
+                        <outlet property="nameText" destination="bcH-z0-GU0" id="f6c-Ax-MHJ"/>
+                        <outlet property="phoneText" destination="VtJ-qw-szN" id="tqc-ZE-W39"/>
+                        <outlet property="textSearch" destination="sUW-zg-vDq" id="pgY-PA-6WP"/>
+                        <outlet property="updateButton" destination="XnG-Hf-ovG" id="a6A-f3-q0K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5r-Qu-J9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
