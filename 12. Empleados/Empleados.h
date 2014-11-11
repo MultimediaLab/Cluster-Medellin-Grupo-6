@@ -23,4 +23,7 @@
 //Buscar
 -(void)searchEmployedInDatabase;
 
+//Eliminar
+-(void)deleteEmployedInDatabase;
+
 @end
