@@ -8,8 +8,14 @@
 
 #import "ViewController.h"
 #import "MiPunto.h"
+#import "CityIconView.h"
+#import "PopupCityView.h"
 
 @interface ViewController ()
+{
+    PopupCityView * pop;
+
+}
 
 @property MKPolyline * line;
 
@@ -89,6 +95,33 @@
     return rutaRender;
 }
 
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    if (![annotation isKindOfClass:[MKUserLocation class]]) {
+        CityIconView * city = [[[NSBundle mainBundle] loadNibNamed:@"CityIcon" owner:self options:nil] objectAtIndex:0];
+        return city;
+    }
+    return nil;
+}
+
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    if (![view.annotation isKindOfClass:[MKUserLocation class]]) {
+        pop = [[[NSBundle mainBundle] loadNibNamed:@"PoupCity" owner:self options:nil] objectAtIndex:0];
+        pop.PopupText.text = view.annotation.title;
+        
+        CGRect popFrame = pop.frame;
+        popFrame.origin = CGPointMake(30, 30);
+        pop.frame = popFrame;
+        
+        [self.view addSubview:pop];
+    }
+}
+-(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view{
+    if (![view.annotation isKindOfClass:[MKUserLocation class]]) {
+        [pop removeFromSuperview];
+    }
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -108,6 +141,27 @@
             break;
     }
     
+    
+}
+
+- (IBAction)programarNotificacion:(id)sender {
+    UILocalNotification * viaje = [[UILocalNotification alloc] init];
+    
+   /* NSString * fechaString = @"01-01-2015";
+    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd-MM-yyyy"];
+    NSDate * fechaNuevoAno = [[NSDate alloc] init];
+    fechaNuevoAno = [dateFormat dateFromString:fechaString];
+    viaje.fireDate = fechaNuevoAno;*/
+    
+    viaje.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+    viaje.alertBody= @"Recuerda el Viaje a Bogota!!!";
+    
+    viaje.timeZone = [NSTimeZone defaultTimeZone];
+    
+    viaje.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:viaje];
     
 }
 @end

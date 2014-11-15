@@ -9,5 +9,7 @@
 
 @property (strong, nonatomic) IBOutlet MKMapView *worldView;
 - (IBAction)changeMap:(id)sender;
+- (IBAction)programarNotificacion:(id)sender;
+
 @end
 

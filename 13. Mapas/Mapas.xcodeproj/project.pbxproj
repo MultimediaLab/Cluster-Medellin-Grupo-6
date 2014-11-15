@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F87C3DE41A178BEA0078256D /* CityIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C3DE31A178BEA0078256D /* CityIconView.m */; };
+		F87C3DE61A178C230078256D /* CityIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87C3DE51A178C230078256D /* CityIcon.xib */; };
+		F87C3DE81A178CD60078256D /* city-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F87C3DE71A178CD60078256D /* city-icon.png */; };
+		F87C3DEA1A17925C0078256D /* PoupCity.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87C3DE91A17925C0078256D /* PoupCity.xib */; };
+		F87C3DED1A1792880078256D /* PopupCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C3DEC1A1792880078256D /* PopupCityView.m */; };
 		F8AEC41F1A1563E20077DE32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AEC41E1A1563E20077DE32 /* main.m */; };
 		F8AEC4221A1563E20077DE32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AEC4211A1563E20077DE32 /* AppDelegate.m */; };
 		F8AEC4251A1563E20077DE32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AEC4241A1563E20077DE32 /* ViewController.m */; };
@@ -30,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F87C3DE21A178BEA0078256D /* CityIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityIconView.h; sourceTree = "<group>"; };
+		F87C3DE31A178BEA0078256D /* CityIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityIconView.m; sourceTree = "<group>"; };
+		F87C3DE51A178C230078256D /* CityIcon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityIcon.xib; path = ../CityIcon.xib; sourceTree = "<group>"; };
+		F87C3DE71A178CD60078256D /* city-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "city-icon.png"; sourceTree = "<group>"; };
+		F87C3DE91A17925C0078256D /* PoupCity.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoupCity.xib; sourceTree = "<group>"; };
+		F87C3DEB1A1792880078256D /* PopupCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupCityView.h; sourceTree = "<group>"; };
+		F87C3DEC1A1792880078256D /* PopupCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupCityView.m; sourceTree = "<group>"; };
 		F8AEC4191A1563E10077DE32 /* Mapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEC41D1A1563E20077DE32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8AEC41E1A1563E20077DE32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +84,10 @@
 		F8AEC4101A1563E10077DE32 = {
 			isa = PBXGroup;
 			children = (
+				F87C3DEB1A1792880078256D /* PopupCityView.h */,
+				F87C3DEC1A1792880078256D /* PopupCityView.m */,
+				F87C3DE91A17925C0078256D /* PoupCity.xib */,
+				F87C3DE71A178CD60078256D /* city-icon.png */,
 				F8AEC4461A156A4D0077DE32 /* MiPunto.h */,
 				F8AEC4471A156A4D0077DE32 /* MiPunto.m */,
 				F8AEC4441A1564310077DE32 /* MapKit.framework */,
@@ -98,6 +114,9 @@
 				F8AEC4211A1563E20077DE32 /* AppDelegate.m */,
 				F8AEC4231A1563E20077DE32 /* ViewController.h */,
 				F8AEC4241A1563E20077DE32 /* ViewController.m */,
+				F87C3DE21A178BEA0078256D /* CityIconView.h */,
+				F87C3DE31A178BEA0078256D /* CityIconView.m */,
+				F87C3DE51A178C230078256D /* CityIcon.xib */,
 				F8AEC4261A1563E20077DE32 /* Main.storyboard */,
 				F8AEC4291A1563E20077DE32 /* Images.xcassets */,
 				F8AEC42B1A1563E20077DE32 /* LaunchScreen.xib */,
@@ -212,9 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87C3DE81A178CD60078256D /* city-icon.png in Resources */,
 				F8AEC4281A1563E20077DE32 /* Main.storyboard in Resources */,
 				F8AEC42D1A1563E20077DE32 /* LaunchScreen.xib in Resources */,
 				F8AEC42A1A1563E20077DE32 /* Images.xcassets in Resources */,
+				F87C3DEA1A17925C0078256D /* PoupCity.xib in Resources */,
+				F87C3DE61A178C230078256D /* CityIcon.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87C3DE41A178BEA0078256D /* CityIconView.m in Sources */,
 				F8AEC4481A156A4D0077DE32 /* MiPunto.m in Sources */,
 				F8AEC4251A1563E20077DE32 /* ViewController.m in Sources */,
 				F8AEC4221A1563E20077DE32 /* AppDelegate.m in Sources */,
+				F87C3DED1A1792880078256D /* PopupCityView.m in Sources */,
 				F8AEC41F1A1563E20077DE32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
